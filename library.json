@@ -1,12 +1,12 @@
 {
-    "name": "libpax",
+    "name": "pio-libpax",
     "version":"0.1.0",
     "keywords": "libpax",
     "description": "todo",
     "repository":
     {
       "type": "git",
-      "url": "http://git.r0k.de/p.yang/wifi-counter-espidf.git"
+      "url": "git@github.com:techrick/pio-libpax.git"
     },
     "authors":
     [
@@ -14,10 +14,9 @@
         "email":"m.solinski@greyrook.com"
       }
     ],
-    "frameworks": ["espidf", "arduino"],
+    "frameworks": ["espidf"],
     "platforms": "espressif32",
     "build": {
-      "includeDir": "lib/libpax",
-      "srcDir": "lib/libpax"
+      "flags": "-D LIBPAX_ESPIDF=1 -fexceptions -D PIO_FRAMEWORK_ESP_IDF_ENABLE_EXCEPTIONS -D LIBPAX_BLE -D LIBPAX_WIFI -D NO_BENCHMARK"
     }
   }

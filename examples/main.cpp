@@ -23,19 +23,8 @@ void init() {
   libpax_counter_start();
 }
 
-#ifdef LIBPAX_ARDUINO
-// arduino code
-void setup() {
-  init();
-}
-
-void loop() {}
-#endif
-
-#ifdef LIBPAX_ESPIDF
 // espidf code
 extern "C" void app_main();
 void app_main() {
   init();
 }
-#endif
