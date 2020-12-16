@@ -14,7 +14,7 @@
         "email":"m.solinski@greyrook.com"
       }
     ],
-    "frameworks": ["espidf"],
+    "frameworks": ["arduino", "espidf"],
     "platforms": "espressif32",
     "build": {
       "flags": "-D LIBPAX_ESPIDF=1 -fexceptions -D PIO_FRAMEWORK_ESP_IDF_ENABLE_EXCEPTIONS -D LIBPAX_BLE -D LIBPAX_WIFI -D NO_BENCHMARK"
